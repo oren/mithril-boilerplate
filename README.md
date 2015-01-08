@@ -32,3 +32,13 @@ Now you should see the example Mithril app at [http://localhost:9000](http://loc
 - Run `gulp watch` to get local development started.
 - Run `gulp build` to build a distribution.
 - Run `gulp wiredep` to add new bower dependencies to your index.html.
+
+## Run with Docker
+
+docker run --rm -it -p 9000:9000 -v $(pwd):/home --name node-app node /bin/bash
+cd /home
+npm install
+./node_modules/.bin/grunt watch
+open http://localhost:9000
+
+
