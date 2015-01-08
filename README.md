@@ -35,7 +35,7 @@ Now you should see the example Mithril app at [http://localhost:9000](http://loc
 
 ## Run with Docker
 
-docker run --rm -it -p 9000:9000 -v $(pwd):/home --name node-app node /bin/bash
+docker run --rm -it -p 9000:9000 -v $(pwd):/home --name node-app node:0.10 /bin/bash
 cd /home
 npm install
 ./node_modules/.bin/grunt watch
